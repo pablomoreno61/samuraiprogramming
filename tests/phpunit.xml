@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="./index.php"
+    backupGlobals="false"
+    backupStaticAttributes="false"
+    verbose="true"
+    colors="true"
+    convertErrorsToExceptions="true"
+    convertNoticesToExceptions="true"
+    convertWarningsToExceptions="true"
+    beStrictAboutTestsThatDoNotTestAnything="true"
+    processIsolation="false"
+    stopOnFailure="false"
+    syntaxCheck="true">
+
+    <testsuite name="SamuraiProgramming Libs Test suite">
+        <directory suffix=".php">./</directory>
+    </testsuite>
+
+    <filter>
+        <blacklist>
+            <directory suffix=".php">../vendor</directory>
+            <directory suffix=".php">../tests</directory>
+        </blacklist>
+    </filter>
+</phpunit>
